@@ -8,17 +8,19 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="upperfspackage">1.0</value>
+  </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">5</value>
+  <value name="build">6</value>
   <null name="description"/>
   <value name="created_date">22-07-2025 05:59:25 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-07-22T06:00:07.108718352Z</value>
+  <value name="lastUpdated">2025-07-22T06:21:31.002388866Z</value>
   <value name="wmProjectId">fl990f554f49a109a3e1a925</value>
   <value name="creator">Arti Khare</value>
 </Values>
