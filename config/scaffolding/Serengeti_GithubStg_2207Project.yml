@@ -8,14 +8,31 @@ packages:
   gitUsername: ArtiKhareIBM
   gitBranch: main
 - name: upperfspackage
+  version: "1.0"
   gitServerName: srcCtrl_bitbucket_Arti
   gitUrl: https://bitbucket.org/testartiibm
   gitUsername: artikhare
   gitBranch: master
 services:
+- serviceName: project.serengeti_githubstg_2207.integrations:bitbucketfs
+  packages:
+  - name: Serengeti_GithubStg_2207Project
+    version: "1.0"
+  - name: upperfspackage
+    version: "1.0"
+- serviceName: UpperFSPackage:upperfs
+  packages:
+  - name: upperfspackage
+    version: "1.0"
+- serviceName: pub.string:toUpper
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2070
 - serviceName: project.serengeti_githubstg_2207.integrations:gcd
   packages:
   - name: Serengeti_GithubStg_2207Project
+    version: "1.0"
+  - name: upperfspackage
     version: "1.0"
 - serviceName: pub.date:getCurrentDate
   packages:
